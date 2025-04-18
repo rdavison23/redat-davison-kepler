@@ -1,0 +1,49 @@
+.special-gothic-condensed-one-regular {
+  font-family: 'Special Gothic Condensed One', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(51, 43, 51);
+  color: aliceblue;
+  font-size: 7px;
+  font-family: 'Special Gothic Condensed One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  font-size: 7px;
+  color: aliceblue;
+}
+h1 {
+  background-color: rgb(68, 62, 72);
+  font-size: 15px;
+  color: #ff6600;
+  width: 150px;
+}
+h2 {
+  font-size: 10px;
+  color: #f2eea2;
+}
+p {
+  text-align: center;
+  background-color: rgb(68, 62, 72);
+  width: 300px;
+}
+
+#Experience ul {
+  list-style: none;
+  padding: 0;
+}
+#Experience li {
+  background-color: #e7caca; /* Light gray background */
+  border-left: 5px solid #ff6600; /* Accent border */
+  padding: 3px;
+  margin: 7px 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 1px; /* Rounded corners */
+  font-weight: bold;
+  font-size: 7px;
+}
