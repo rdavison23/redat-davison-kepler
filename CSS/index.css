@@ -47,3 +47,17 @@ p {
   font-weight: bold;
   font-size: 16px;
 }
+
+#About {
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+#experience {
+  margin-bottom: 25px;
+  padding: 20px;
+}
+#connect {
+  margin-bottom: 20px;
+  padding: 15px;
+}
