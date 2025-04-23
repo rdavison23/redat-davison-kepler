@@ -17,6 +17,12 @@ a {
   font-size: 7px;
   color: aliceblue;
 }
+h1,
+h2,
+h3 {
+  font-family: 'Special Gothic Condensed One', sans-serif;
+}
+
 h1 {
   background-color: rgb(68, 62, 72);
   font-size: 20px;
@@ -46,6 +52,7 @@ p {
   border-radius: 1px; /* Rounded corners */
   font-weight: bold;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 #About {
