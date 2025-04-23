@@ -17,6 +17,10 @@ h2 {
   font-weight: bold;
 }
 
+body {
+  font-family: 'Arial', sans-serif;
+}
+
 h1 {
   background-color: rgb(68, 62, 72);
   font-size: 32px;
