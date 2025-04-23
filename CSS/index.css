@@ -1,9 +1,3 @@
-.special-gothic-condensed-one-regular {
-  font-family: 'Special Gothic Condensed One', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
 body {
   background-color: rgb(51, 43, 51);
   color: aliceblue;
@@ -71,9 +65,28 @@ p {
   text-align: center;
 }
 
+#connect ul {
+  list-style: none;
+  padding: 0;
+}
+
+#connect li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 #connect a {
   font-size: 24px;
-  margin: 0 15px;
   color: aliceblue;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#connect a i {
+  font-size: 28px;
+  color: #ff6600;
 }
