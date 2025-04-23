@@ -18,19 +18,19 @@ a {
   color: aliceblue;
 }
 h1,
-h2,
-h3 {
+h2 {
   font-family: 'Special Gothic Condensed One', sans-serif;
+  font-weight: bold;
 }
 
 h1 {
   background-color: rgb(68, 62, 72);
-  font-size: 20px;
+  font-size: 32px;
   color: #ff6600;
   width: 150px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   color: #f2eea2;
 }
 p {
@@ -52,6 +52,8 @@ p {
   border-radius: 1px; /* Rounded corners */
   font-weight: bold;
   font-size: 16px;
+}
+#Experience li {
   margin-bottom: 10px;
 }
 
