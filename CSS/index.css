@@ -1,15 +1,16 @@
+/* Use Oswald consistently as imported from Google Fonts */
 body {
   background-color: rgb(51, 43, 51);
   color: aliceblue;
   font-size: 1rem;
-  font-family: 'Special Gothic Condensed One', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 h1,
 h2 {
-  font-family: 'Special Gothic Condensed One', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
 }
 
@@ -32,6 +33,7 @@ p {
   width: 300px;
 }
 
+/* Consolidated section styles for clarity */
 #About,
 #experience,
 #connect {
