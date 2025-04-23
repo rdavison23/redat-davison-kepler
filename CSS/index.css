@@ -28,6 +28,7 @@ h1 {
   font-size: 32px;
   color: #ff6600;
   width: 150px;
+  font-weight: 700;
 }
 h2 {
   font-size: 24px;
@@ -70,7 +71,9 @@ p {
   text-align: center;
 }
 
-#connect {
-  display: flex;
-  justify-content: space-around; /* Distributes items evenly */
+#connect a {
+  font-size: 24px;
+  margin: 0 15px;
+  color: aliceblue;
+  text-decoration: none;
 }
