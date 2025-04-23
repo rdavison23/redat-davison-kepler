@@ -1,16 +1,18 @@
-.special-gothic-condensed-one-regular {
-  font-family: 'Special Gothic Condensed One', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
 body {
   background-color: rgb(51, 43, 51);
   color: aliceblue;
   font-size: 1rem;
-  font-family: 'Special Gothic Condensed One', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+#About,
+#experience,
+#connect {
+  margin-bottom: 25px;
+  padding: 20px;
+  text-align: center;
 }
 
 a {
@@ -22,11 +24,6 @@ h2 {
   font-family: 'Special Gothic Condensed One', sans-serif;
   font-weight: bold;
 }
-
-body {
-  font-family: 'Arial', sans-serif;
-}
-
 h1 {
   background-color: rgb(68, 62, 72);
   font-size: 32px;
@@ -34,10 +31,12 @@ h1 {
   width: 150px;
   font-weight: 700;
 }
+
 h2 {
   font-size: 24px;
   color: #f2eea2;
 }
+
 p {
   text-align: center;
   background-color: rgb(68, 62, 72);
@@ -57,22 +56,7 @@ p {
   border-radius: 1px; /* Rounded corners */
   font-weight: bold;
   font-size: 16px;
-}
-#Experience li {
   margin-bottom: 10px;
-}
-
-#About {
-  margin-bottom: 25px;
-  padding: 20px;
-}
-
-#About,
-#experience,
-#connect {
-  margin-bottom: 25px;
-  padding: 20px;
-  text-align: center;
 }
 
 #connect ul {
