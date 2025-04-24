@@ -1,6 +1,5 @@
-/* Use Oswald consistently as imported from Google Fonts */
 body {
-  background-color: rgb(51, 43, 51);
+  background-color: rgb(70, 59, 70);
   color: aliceblue;
   font-size: 1rem;
   font-family: 'Oswald', sans-serif;
@@ -33,7 +32,6 @@ p {
   width: 300px;
 }
 
-/* Consolidated section styles for clarity */
 #About,
 #experience,
 #connect {
