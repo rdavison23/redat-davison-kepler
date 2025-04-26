@@ -4,8 +4,7 @@ body {
   font-size: 1rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  font-style: normal;
-}
+  font-style: normal;}
 
 h1,
 h2 {
@@ -19,6 +18,7 @@ h1 {
   width: 400px;
   font-weight: 400;
   text-align: center;
+  text-decoration: #7c6f806d underline;
 }
 
 h2 {
@@ -33,8 +33,8 @@ p {
 }
 
 #About,
-#experience,
-#connect {
+#Experience,
+#Connect {
   margin-bottom: 20px;
   padding: 15px;
   text-align: center;
@@ -57,19 +57,19 @@ p {
   margin-bottom: 10px;
 }
 
-#connect ul {
+#Connect ul {
   list-style: none;
   padding: 0;
 }
 
-#connect li {
+#Connect li {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
 }
 
-#connect a {
+#Connect a {
   font-size: 24px;
   color: aliceblue;
   text-decoration: none;
@@ -78,7 +78,7 @@ p {
   gap: 8px;
 }
 
-#connect a i {
+#Connect a i {
   font-size: 28px;
   color: #ff6600;
 }
