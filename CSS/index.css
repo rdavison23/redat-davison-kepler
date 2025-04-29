@@ -19,6 +19,8 @@ h1 {
   font-weight: 400;
   text-align: center;
   text-decoration: #7c6f806d underline;
+  margin: auto;
+  letter-spacing: 6px;
 }
 
 h2 {
@@ -30,6 +32,7 @@ p {
   text-align: center;
   background-color: rgb(68, 62, 72);
   width: 300px;
+  margin: auto;
 }
 
 #About,
@@ -76,9 +79,36 @@ p {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin: auto;
 }
 
 #Connect a i {
   font-size: 28px;
   color: #ff6600;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #c2b1b1;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color:rgba(240, 248, 255, 0.638);
+  font-weight: bold;
+}
+
+nav a :hover {
+  color:#dd5f1b
 }
