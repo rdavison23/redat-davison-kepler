@@ -95,20 +95,15 @@ nav {
   z-index: 1000;
 }
 
-
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
 }
 
 nav a {
   text-decoration: none;
-  color:rgba(240, 248, 255, 0.638);
+  color: aliceblue;
   font-weight: bold;
-}
-
-nav a :hover {
-  color:#dd5f1b
 }
