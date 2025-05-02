@@ -4,7 +4,8 @@ body {
   font-size: 1rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  font-style: normal;}
+  font-style: normal;
+}
 
 h1,
 h2 {
@@ -25,16 +26,15 @@ h1 {
 
 h2 {
   font-size: 24px;
-  color: #d7ab94;
+  color: rgb(231, 219, 211);
 }
 
 p {
   text-align: center;
   background-color: rgb(68, 62, 72);
-  width: 300px;
+  width: 400px;
   margin: auto;
 }
-
 
 #About,
 #Experience,
@@ -49,6 +49,13 @@ p {
 #Skills ul {
   list-style: none;
   padding: 0;
+}
+
+#Experience {
+  background: rgb(68, 62, 72);
+  width: 370px;
+  margin: auto;
+  text-align: center;
 }
 
 #Skills li {
@@ -94,7 +101,7 @@ nav {
   top: 0;
   background-color: #c2b1b1;
   padding: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
@@ -111,6 +118,6 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover{
+nav a:hover {
   color: #ff6600;
 }
