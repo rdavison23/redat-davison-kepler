@@ -1,4 +1,4 @@
-/* Base */
+/* Base Desktop first */
 body {
   background-color: rgb(54, 46, 54);
   color: rgb(231, 219, 211);
@@ -6,12 +6,13 @@ body {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   max-width: 1200px;
-  margin:  0 auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 /* h1 and h2 */
-h1, h2 {
+h1,
+h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   text-align: center;
@@ -59,7 +60,6 @@ nav a {
   color: rgba(54, 46, 54, 0.9);
   font-weight: bold;
   transition: color 0.3s ease;
-
 }
 
 nav a:hover {
@@ -169,7 +169,7 @@ section {
   color: #ff6600;
 }
 
-/* Media */
+/* Mobile View */
 @media screen and (max-width: 768px) {
   body {
     padding: 0 15px;
@@ -199,15 +199,25 @@ section {
     align-items: center;
   }
 }
-
+/* Tablet View */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "title description";
+    grid-template-areas: 'title description';
     align-items: center;
   }
 
   #Skills ul {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  h1 {
+    color: bisque;
+    font-style: italic;
+  }
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aquamarine;
+  }
 }
+
