@@ -10,7 +10,6 @@ body {
   padding: 0 20px;
 }
 
-/* h1 and h2 */
 h1,
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -225,25 +224,3 @@ button {
   color: antiquewhite;
 }
 
-/* Footer Styles */
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  background-color: rgba(194, 177, 177, 0.35);
-  border-top: 5px solid rgba(255, 102, 0, 0.39);
-}
-
-footer p {
-  color: rgba(250, 235, 215, 0.816);
-  font-size: 14px;
-  margin: 0;
-}
-
-/* Add this to your media queries */
-@media screen and (max-width: 768px) {
-  footer {
-      padding: 15px;
-      margin-top: 30px;
-  }
-}
