@@ -52,6 +52,16 @@ nav ul {
   padding: 0;
   margin: 0;
   gap: 30px;
+
+#About,
+#Experience,
+#Skills,
+#Projects,
+#Connect {
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: center;
+  color: aliceblue;
 }
 
 nav a {
@@ -100,7 +110,7 @@ section {
   gap: 20px;
 }
 
-.container {
+#Experience .container {
   background-color: rgba(194, 177, 177, 0.35);
   border-left: 5px solid #ff6600;
   padding: 20px;
@@ -111,7 +121,7 @@ section {
   gap: 15px;
 }
 
-.jobTitle {
+#Experience .jobTitle {
   font-weight: bold;
   color: #ff6600;
   font-size: 1.1rem;
@@ -122,6 +132,11 @@ section {
 }
 
 /* Skills Section */
+#Experience .jobDescription {
+  display: block;
+  line-height: 1.5;
+}
+
 #Skills ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -142,6 +157,10 @@ section {
 }
 
 /* Connect Section */
+  font-size: 16px;
+  color: antiquewhite;
+}
+
 #Connect ul {
   display: flex;
   justify-content: center;
@@ -166,6 +185,15 @@ section {
 
 #Connect i {
   color: #ff6600;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #c2b1b1;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-bottom: 20px;
 }
 
 /* Mobile View */
