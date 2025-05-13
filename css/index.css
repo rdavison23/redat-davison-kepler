@@ -65,7 +65,7 @@ nav a:hover {
   color: #ff6600;
 }
 
-/* Sections */
+/* Sections - General */
 section {
   margin-bottom: 40px;
   padding: 30px;
@@ -77,6 +77,9 @@ section {
   margin: 20px auto;
   display: block;
   border: 3px solid #ff6600cb;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .intro {
@@ -90,7 +93,7 @@ section {
   line-height: 1.6;
 }
 
-/* Experience Section - Changed to Grid Layout */
+/* Experience Section */
 #Experience ul {
   list-style: none;
   padding: 0;
@@ -122,7 +125,7 @@ section {
   line-height: 1.6;
 }
 
-/* Skills Section with Grid */
+/* Skills Section */
 #Skills ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -141,6 +144,19 @@ section {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+#Skills li:hover {
+  transform: translateY(-3px);
+}
+
+/* Projects Section */
+#Projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 /* Connect Section */
@@ -177,6 +193,7 @@ footer {
   margin-top: 40px;
   background-color: rgba(194, 177, 177, 0.35);
   border-top: 5px solid rgba(255, 102, 0, 0.39);
+  width: 100%;
 }
 
 footer p {
@@ -188,6 +205,7 @@ footer p {
 /* Media Queries */
 /* Tablet Devices */
 @media screen and (max-width: 768px) {
+  /* Typography changes */
   body {
     font-size: 0.9rem;
     padding: 0 15px;
@@ -204,24 +222,49 @@ footer p {
     margin-bottom: 1rem;
   }
 
+  /* Navigation changes */
   nav ul {
     gap: 15px;
+  }
+
+  /* Section changes */
+  section {
+    padding: 20px;
+  }
+
+  /* Skills changes */
+  #Skills ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* Experience changes */
+  #Experience ul {
+    grid-template-columns: 1fr;
   }
 
   .container {
     padding: 15px;
   }
 
-  #Skills ul {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+  /* About changes */
+  #About img {
+    width: 120px;
+    height: 120px;
   }
 
+  .intro {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  /* Connect changes */
   #Connect ul {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Footer changes */
   footer {
     padding: 15px;
     margin-top: 30px;
@@ -230,6 +273,7 @@ footer p {
 
 /* Mobile Devices */
 @media screen and (max-width: 480px) {
+  /* Typography changes */
   body {
     font-size: 0.8rem;
     padding: 0 10px;
@@ -240,21 +284,18 @@ footer p {
     letter-spacing: 2px;
   }
 
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Navigation changes */
+  nav {
+    padding: 10px;
+  }
+
   nav ul {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
 
-  #Skills ul {
-    grid-template-columns: 1fr;
-  }
-
-  .container {
-    padding: 10px;
-  }
-
-  .intro {
-    padding: 15px;
-  }
-}

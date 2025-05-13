@@ -6,12 +6,15 @@ document.body.appendChild(footer);
 const today = new Date();
 const thisYear = today.getFullYear();
 
-// Create copyright paragraph
+// Create copyright paragraph with proper Unicode symbol
 const copyright = document.createElement('p');
-copyright.innerHTML = `© ${thisYear} Redat Davison`;
+// Using Unicode escape sequence for copyright symbol
+copyright.innerHTML = `\u00A9 ${thisYear} Redat Davison`;
+// Alternative: you can also use the symbol directly
+// copyright.innerHTML = `© ${thisYear} Redat Davison`;
 footer.appendChild(copyright);
 
-// Skills array - technical and professional skills
+// Skills array
 const skills = [
     "JavaScript",
     "HTML",
@@ -24,18 +27,19 @@ const skills = [
     "Fluent in Amharic"
 ];
 
-// Select skills section using DOM Selection
-const skillsSection = document.querySelector('#Skills');
-const skillsList = skillsSection.querySelector('ul');
-
-// Add skills to the list using a for loop
-for (let i = 0; i < skills.length; i++) {
-    // Create new list item
-    const skill = document.createElement('li');
-    
-    // Set the inner text to current skill
-    skill.innerText = skills[i];
-    
-    // Append to skills list
-    skillsList.appendChild(skill);
-}
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Select skills section and list
+    const skillsSection = document.querySelector('#Skills');
+    if (skillsSection) {
+        const skillsList = skillsSection.querySelector('ul');
+        if (skillsList) {
+            // Add skills to the list
+            skills.forEach(skillText => {
+                const skill = document.createElement('li');
+                skill.textContent = skillText;
+                skillsList.appendChild(skill);
+            });
+        }
+    }
+});
