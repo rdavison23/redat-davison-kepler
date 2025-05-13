@@ -1,4 +1,4 @@
-/* Base Desktop first */
+/* Desktop first */
 body {
   background-color: rgb(54, 46, 54);
   color: rgb(231, 219, 211);
@@ -10,8 +10,9 @@ body {
   padding: 0 20px;
 }
 
-/* Typography */
-h1, h2 {
+/* h1 & h2 */
+h1,
+h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   text-align: center;
@@ -278,24 +279,23 @@ footer p {
     font-size: 0.8rem;
     padding: 0 10px;
   }
+}
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
 
-  h1 {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-  }
+h2 {
+  font-size: 1.2rem;
+}
 
-  h2 {
-    font-size: 1.2rem;
-  }
+/* Navigation changes */
+nav {
+  padding: 10px;
+}
 
-  /* Navigation changes */
-  nav {
-    padding: 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
+nav ul {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
