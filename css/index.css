@@ -1,4 +1,4 @@
-/* Desktop first */
+/* Base Desktop first */
 body {
   background-color: rgb(54, 46, 54);
   color: rgb(231, 219, 211);
@@ -10,9 +10,8 @@ body {
   padding: 0 20px;
 }
 
-/* h1 & h2 */
-h1,
-h2 {
+/* Typography */
+h1, h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   text-align: center;
@@ -40,7 +39,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: #c2b1b1;
-  padding: 15px;
+  padding: 1px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   margin-bottom: 20px;
@@ -279,23 +278,22 @@ footer p {
     font-size: 0.8rem;
     padding: 0 10px;
   }
-}
-h1 {
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-}
 
-h2 {
-  font-size: 1.2rem;
-}
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
 
-/* Navigation changes */
-nav {
-  padding: 10px;
-}
+  h2 {
+    font-size: 1.2rem;
+  }
 
-nav ul {
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
+  /* Navigation changes */
+  nav {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
