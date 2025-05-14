@@ -11,7 +11,8 @@ body {
 }
 
 /* Typography */
-h1, h2 {
+h1,
+h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   text-align: center;
@@ -39,7 +40,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: #c2b1b1;
-  padding: 1px;
+  padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   margin-bottom: 20px;
@@ -202,8 +203,8 @@ footer p {
   margin: 0;
 }
 
-/* Media Queries */
-/* Tablet Devices */
+/* Mobile view */
+/* Tablet view */
 @media screen and (max-width: 768px) {
   /* Typography changes */
   body {
@@ -215,8 +216,13 @@ footer p {
     font-size: 2rem;
     width: 100%;
     letter-spacing: 3px;
+    color: bisque;
+    font-style: italic;
   }
-
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aquamarine;
+  }
   h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -297,3 +303,7 @@ footer p {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    color: bisque;
+
+  }
+}
