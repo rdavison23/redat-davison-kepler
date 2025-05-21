@@ -307,3 +307,41 @@ footer p {
 
   }
 }
+
+/* Leave a Message Form */
+#leaveMessage form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased spacing for better clarity */
+}
+
+#leaveMessage input,
+#leaveMessage textarea {
+  width: 100%;
+  padding: 12px; /* Slightly larger padding for better usability */
+  border-radius: 6px; /* Slightly rounder borders */
+  border: 2px solid #ff6600; /* Clearer visual separation */
+  font-size: 1rem; /* Ensuring readability */
+}
+
+#leaveMessage button {
+  font-size: 1.1rem; /* Slightly larger for better click accessibility */
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+  #leaveMessage input,
+  #leaveMessage textarea {
+    font-size: 0.9em; /* Slightly adjusted for smaller screens */
+    padding: 10px;
+  }
+
+  #leaveMessage button {
+    font-size: 1rem; /* Keeps button size reasonable */
+    padding: 10px;
+    color:#ff6600;
+  }
+}
