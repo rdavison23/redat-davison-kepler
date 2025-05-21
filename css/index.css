@@ -307,3 +307,69 @@ footer p {
 
   }
 }
+
+/* Leave a Message Section */
+#leaveMessage {
+  padding: 20px;
+  background-color: rgba(194, 177, 177, 0.35);
+  border-left: 5px solid #ff6600;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 8px;
+}
+
+#leaveMessage h2 {
+  text-align: center;
+  color: #ff6600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ff6600;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc5200;
+}
+
+/* Messages Section */
+#messages ul {
+  list-style: none;
+  padding: 0;
+}
+
+#messages li {
+  background-color: rgba(194, 177, 177, 0.35);
+  padding: 10px;
+  border-left: 5px solid #ff6600;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-button {
+  background-color: darkred;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}

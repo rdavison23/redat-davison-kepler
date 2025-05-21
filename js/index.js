@@ -43,3 +43,44 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+// Select message form
+const messageForm = document.forms["leave_message"];
+
+// Handle form submission
+messageForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  // Get form values
+  const userName = event.target.usersName.value;
+  const userEmail = event.target.usersEmail.value;
+  const userMessage = event.target.usersMessage.value;
+
+  // Select messages section and list
+  const messageSection = document.querySelector("#messages");
+  const messageList = messageSection.querySelector("ul");
+
+  // Create new message entry
+  const newMessage = document.createElement("li");
+  newMessage.innerHTML = `
+    <a href="mailto:${userEmail}">${userName}</a> - 
+    <span>${userMessage}</span>
+  `;
+
+  // Create remove button
+  const removeButton = document.createElement("button");
+  removeButton.textContent = "Remove";
+  removeButton.classList.add("remove-button");
+  
+  removeButton.addEventListener("click", function () {
+    newMessage.remove();
+  });
+
+  // Add remove button to message entry
+  newMessage.appendChild(removeButton);
+
+  // Append message to list
+  messageList.appendChild(newMessage);
+
+  // Reset form
+  messageForm.reset();
+});
