@@ -160,6 +160,29 @@ section {
   max-width: 800px;
 }
 
+/* Leave a Message Form */
+#leaveMessage form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased spacing for better clarity */
+}
+
+#leaveMessage input,
+#leaveMessage textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 2px solid #ff6600;
+  font-size: 1rem;
+}
+
+#leaveMessage button {
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 /* Connect Section */
 #Connect ul {
   display: flex;
@@ -203,10 +226,8 @@ footer p {
   margin: 0;
 }
 
-/* Mobile view */
 /* Tablet view */
 @media screen and (max-width: 768px) {
-  /* Typography changes */
   body {
     font-size: 0.9rem;
     padding: 0 15px;
@@ -277,6 +298,22 @@ footer p {
   }
 }
 
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+  #leaveMessage input,
+  #leaveMessage textarea {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  #leaveMessage button {
+    font-size: 1rem;
+    padding: 10px;
+    color: #ff6600;
+    background-color: rgba(249, 243, 243, 0.925);
+  }
+}
+
 /* Mobile Devices */
 @media screen and (max-width: 480px) {
   /* Typography changes */
@@ -304,6 +341,5 @@ footer p {
     gap: 10px;
     align-items: center;
     color: bisque;
-
   }
 }
