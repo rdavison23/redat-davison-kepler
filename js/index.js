@@ -88,7 +88,13 @@ fetch('https://api.github.com/users/rdavison23/repos')
       if (projectList) {
         repositories.forEach((repo) => {
           const project = document.createElement('li');
-          project.textContent = repo.name;
+          const projectLink = document.createElement('a');
+
+          projectLink.href = repo.html_url; // GitHub repo link
+          projectLink.textContent = repo.name;
+          projectLink.target = '_blank'; // Opens in a new tab
+
+          project.appendChild(projectLink);
           projectList.appendChild(project);
         });
       } else {
@@ -104,14 +110,3 @@ fetch('https://api.github.com/users/rdavison23/repos')
         '<p>Unable to load projects. Please try again later.</p>';
     }
   });
-  repositories.forEach(repo => {
-    const project = document.createElement("li");
-    const projectLink = document.createElement("a");
-
-    projectLink.href = repo.html_url; // GitHub repo link
-    projectLink.textContent = repo.name;
-    projectLink.target = "_blank"; // Opens in a new tab
-
-    project.appendChild(projectLink);
-    projectList.appendChild(project);
-});
