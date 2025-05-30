@@ -160,6 +160,29 @@ section {
   max-width: 800px;
 }
 
+#Projects ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+#Projects li {
+  background-color: rgba(194, 177, 177, 0.35);
+  border-left: 5px solid #ff6600;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+#Projects li:hover {
+  transform: scale(1.05);
+}
+
 /* Leave a Message Form */
 #leaveMessage form {
   display: flex;
