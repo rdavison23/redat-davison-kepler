@@ -90,10 +90,13 @@ fetch('https://api.github.com/users/rdavison23/repos')
           const project = document.createElement('li');
           const projectLink = document.createElement('a');
 
-          projectLink.href = repo.html_url; // GitHub repo link
+          projectLink.href = repo.html_url;
           projectLink.textContent = repo.name;
-          projectLink.target = '_blank'; // Opens in a new tab
+          projectLink.target = '_blank';
 
+          // set the text color
+          project.style.color = '#ffffff'; // Ensures text color is white
+          projectLink.style.color = '#ffffff';
           project.appendChild(projectLink);
           projectList.appendChild(project);
         });

@@ -2,7 +2,7 @@
 body {
   background-color: rgb(54, 46, 54);
   color: rgb(231, 219, 211);
-  font-size: 1rem;
+  font-size: 25px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   max-width: 1200px;
@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
   color: rgb(231, 219, 211);
   margin-bottom: 20px;
 }
@@ -85,6 +85,7 @@ section {
 
 .intro {
   text-align: center;
+  font-size: 20px;
   background-color: rgb(68, 62, 72);
   margin: 20px auto;
   color: rgba(250, 235, 215, 0.816);
@@ -162,20 +163,21 @@ section {
 
 #Projects ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   list-style: none;
   padding: 0;
 }
 
 #Projects li {
-  background-color: rgba(194, 177, 177, 0.35);
+  background-color: rgba(231, 219, 211, 0.2);
   border-left: 5px solid #ff6600;
-  padding: 15px;
-  border-radius: 4px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   font-weight: bold;
+  font-size: 18px; /* Increased text size */
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
@@ -201,9 +203,29 @@ section {
 
 #leaveMessage button {
   font-size: 1.1rem;
+  background-color: rgb(252, 252, 252);
   padding: 12px;
   border-radius: 6px;
   cursor: pointer;
+  border: 2px solid #ff6600;
+  color: #ff6600;
+}
+
+/* Leave a Message Form */
+#messages ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+#messages li {
+  background-color: rgba(194, 177, 177, 0.35);
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
 }
 
 /* Connect Section */
@@ -252,23 +274,25 @@ footer p {
 /* Tablet view */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 0.9rem;
+    font-size: 18px;
     padding: 0 15px;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 32px;
     width: 100%;
     letter-spacing: 3px;
     color: bisque;
     font-style: italic;
+    font-size: 32px;
   }
   p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: aquamarine;
+    color: rgba(238, 210, 247, 0.665);
+    font-size: 18px;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 1rem;
   }
 
@@ -341,17 +365,17 @@ footer p {
 @media screen and (max-width: 480px) {
   /* Typography changes */
   body {
-    font-size: 0.8rem;
+    font-size: 16px;
     padding: 0 10px;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 28px;
     letter-spacing: 2px;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 22px;
   }
 
   /* Navigation changes */
